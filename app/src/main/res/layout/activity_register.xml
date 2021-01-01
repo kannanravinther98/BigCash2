@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/reg_name"
         android:layout_width="278dp"
         android:layout_height="45dp"
         android:fontFamily="@font/regular"
@@ -82,9 +82,10 @@
         app:layout_constraintVertical_bias="0.519" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText2"
+        android:id="@+id/reg_email"
         android:layout_width="261dp"
         android:layout_height="47dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/regular"
         android:hint="Email Address"
@@ -92,15 +93,15 @@
         android:textColorHint="@color/colorTextSecondary"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/reg_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintTop_toBottomOf="@+id/reg_name"
+        app:layout_constraintVertical_bias="0.089" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText3"
+        android:id="@+id/reg_password"
         android:layout_width="264dp"
         android:layout_height="58dp"
         android:layout_marginBottom="20dp"
@@ -110,13 +111,13 @@
         android:textColorHint="@color/colorTextSecondary"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/reg_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/reg_btn"
         android:layout_width="238dp"
         android:layout_height="53dp"
         android:background="@color/colorButton"

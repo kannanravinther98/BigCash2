@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "28819530634",
+    "project_id": "bigcash-adb64",
+    "storage_bucket": "bigcash-adb64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28819530634:android:bbb51d723c6626d1eb1e73",
+        "android_client_info": {
+          "package_name": "com.example.bigcash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28819530634-uj1269443ab11u2o97def1td98p2b2hp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiA69vvCPjHwVx7OeGG62YTsgj9sg6-ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28819530634-uj1269443ab11u2o97def1td98p2b2hp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
