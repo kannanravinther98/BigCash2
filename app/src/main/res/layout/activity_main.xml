@@ -14,52 +14,52 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/semi_bold"
-        android:text="Registration"
+        android:text="Welcome"
         android:textColor="#FFFFFF"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="54dp"
-        android:layout_height="15dp"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
         android:layout_marginTop="55dp"
         android:layout_marginBottom="105dp"
         app:layout_constraintBottom_toTopOf="@+id/textView1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/pagination1" />
+        app:layout_constraintVertical_bias="0.388"
+        app:srcCompat="@drawable/happyface" />
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="394dp"
-        android:layout_height="63dp"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/bold"
         android:gravity="center"
-        android:text="We are about to start your registration"
+        android:text="We are about to enter the app"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="324dp"
-        android:layout_height="77dp"
+        android:layout_width="319dp"
+        android:layout_height="78dp"
         android:fontFamily="@font/regular"
         android:gravity="center"
-        android:text="Please specify if you are a new user or have been registered before"
+        android:text="Please specify if you are a new user or you have been registered before"
         android:textColor="#FFFFFF"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -69,30 +69,28 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintVertical_bias="0.475" />
 
     <RadioButton
         android:id="@+id/radioButton"
-        android:layout_width="305dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
         android:fontFamily="@font/bold"
         android:onClick="goToLoginPage"
         android:text="I have been registered before "
         android:textColor="#FFFFFF"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
         android:id="@+id/radioButton2"
-        android:layout_width="197dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/bold"
         android:onClick="goToRegisterPage"
         android:text="I am a new user"
@@ -101,25 +99,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="244dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="60dp"
-        android:text="Next"
-        android:textColor="#FFFFFF"
-        android:background="@color/colorButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.415"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.605" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
