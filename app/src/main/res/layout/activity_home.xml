@@ -4,17 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_layout_register"
+    android:background="@drawable/bg_layout_normal"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/logoutBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout"
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Home"
+        android:fontFamily="@font/bold"
         android:textColor="@color/colorTextPrimary"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="493dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="60dp"
+        android:text="Current Balance & Statistics"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="20sp" />
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
