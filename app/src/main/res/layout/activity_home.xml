@@ -26,7 +26,7 @@
         android:layout_marginLeft="13dp"
         android:fontFamily="@font/bold"
         android:layout_marginTop="60dp"
-        android:text="Current Balance & Statistics"
+        android:text="Current Balance and Statistics"
         android:textColor="@color/colorTextPrimary"
         android:textSize="20sp" />
 
