@@ -22,6 +22,14 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        Button mButtonBalance;
+        mButtonBalance = (Button) findViewById(R.id.buttonBalance);
+        mButtonBalance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),HomeWebviewBalanceActivity.class));            }
+
+        });
 
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
@@ -48,6 +56,9 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
+
     }
 
 
