@@ -95,7 +95,7 @@ public class HomeStatisticsActivity2 extends AppCompatActivity {
 
         private void showChart(ArrayList < Entry > dataVals) {
             lineDataSet.setValues(dataVals);
-            lineDataSet.setLabel("DataSet 1");
+            lineDataSet.setLabel("The trend of spending over time");
             iLineDataSets.clear();
             iLineDataSets.add(lineDataSet);
             lineData = new LineData(iLineDataSets);
