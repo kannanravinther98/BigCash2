@@ -3,6 +3,7 @@ package com.example.bigcash;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -48,6 +49,7 @@ public class HomeStatisticsActivity2 extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         Ref = firebaseDatabase.getReference("ChartValues");
         insertData();
+
     }
 
         private void insertData() {
