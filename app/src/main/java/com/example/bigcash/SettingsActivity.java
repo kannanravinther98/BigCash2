@@ -20,7 +20,6 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        setContentView(R.layout.activity_home);
         Button btn = (Button) findViewById(R.id.logoutBtn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

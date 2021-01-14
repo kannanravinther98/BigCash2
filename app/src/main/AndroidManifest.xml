@@ -26,7 +26,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BigCash">
-        <activity android:name=".HomeWebviewBalanceActivity"></activity>
+        <activity android:name=".HomeStatisticsActivity2" />
+        <activity android:name=".HomeWebviewBalanceActivity" />
         <activity android:name=".ScanActivity2" />
         <activity android:name=".ArticleActivity" />
         <activity android:name=".SettingsActivity" />
