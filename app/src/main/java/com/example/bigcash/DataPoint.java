@@ -5,10 +5,10 @@ import android.widget.TextView;
 
 public class DataPoint {
 
-    int xValue, yValue;
+   int xValue, yValue;
 
 
-    public DataPoint(int xValue, int yValue) {
+   public DataPoint(int xValue, int yValue) {
         this.xValue = xValue;
         this.yValue = yValue;
     }

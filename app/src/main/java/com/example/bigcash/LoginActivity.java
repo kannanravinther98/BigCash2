@@ -17,9 +17,10 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
-    private EditText mEmail,mPassword;
-    private Button mLoginBtn;
+    private EditText mEmail, mPassword;
+    private Button mLoginBtn, forgotPass;
     private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         mEmail = findViewById(R.id.log_email);
         mPassword = findViewById(R.id.log_pass);
         mLoginBtn = findViewById(R.id.log_btn);
+        forgotPass = findViewById(R.id.forpass_btn);
         mAuth = FirebaseAuth.getInstance();
 
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
@@ -35,35 +37,44 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = mEmail.getText().toString();
                 String password = mPassword.getText().toString();
-                if(!email.isEmpty() && !password.isEmpty()){
-                    mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                if (!email.isEmpty() && !password.isEmpty()) {
+                    mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this,"Login Successful!",Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
-                            startActivity(intent);
-                        }else{
-                            Toast.makeText(LoginActivity.this,""+task.getException(),Toast.LENGTH_SHORT).show();
+                            if (task.isSuccessful()) {
+                                Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(LoginActivity.this, "" + task.getException(), Toast.LENGTH_SHORT).show();
 
-                        }
+                            }
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(LoginActivity.this,""+e.getMessage(),Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
                         }
                     });
-                }else{
+                } else {
                     Toast.makeText(LoginActivity.this, "Please fill empty field!", Toast.LENGTH_SHORT).show();
 
                 }
 
 
-
             }
         });
 
+
+        forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(LoginActivity.this, ForgotPassActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }

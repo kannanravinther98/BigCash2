@@ -42,15 +42,17 @@ public class HomeStatisticsActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_statistics);
 
+
         xValue = findViewById(R.id.x_value);
         yValue = findViewById(R.id.y_value);
         insertBtn = findViewById(R.id.btn_insert);
         mpLineChart = findViewById(R.id.line_chart);
         firebaseDatabase = FirebaseDatabase.getInstance();
-        Ref = firebaseDatabase.getReference("ChartValues");
+       Ref = firebaseDatabase.getReference("ChartValues");
         insertData();
 
     }
+
 
         private void insertData() {
             insertBtn.setOnClickListener(new View.OnClickListener() {

@@ -52,14 +52,62 @@
             app:itemIconTint="@color/colorTextPrimary"
             app:itemTextColor="@color/colorTextPrimary"
             app:menu="@menu/bottom_navigation_menu" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_name"
+            android:layout_width="278dp"
+            android:layout_height="45dp"
+            android:fontFamily="@font/regular"
+            android:hint="Name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/colorTextSecondary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.519" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_email"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/regular"
+            android:hint="Email Address"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/colorTextSecondary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/reg_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reg_name"
+            app:layout_constraintVertical_bias="0.089" />
 
         <Button
             android:id="@+id/logoutBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="450dp"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="480dp"
             android:text="Logout"
+            android:textColor="@color/colorTextPrimary" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="340dp"
+            android:text="Save"
             android:textColor="@color/colorTextPrimary" />
 
     </FrameLayout>
