@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#2F2E33"
     tools:context=".ForgotPassActivity">
 
 
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:ems="10"
+        android:textColorHint="@color/colorTextSecondary"
         android:hint="Email"
         android:inputType="textEmailAddress" />
 
