@@ -26,7 +26,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BigCash">
-        <activity android:name=".ForgotPassActivity"></activity>
+        <activity android:name=".contactUs"></activity>
+        <activity android:name=".ForgotPassActivity" />
         <activity android:name=".HomeStatisticsActivity2" />
         <activity android:name=".HomeWebviewBalanceActivity" />
         <activity android:name=".ScanActivity2" />

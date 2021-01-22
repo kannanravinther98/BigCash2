@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -32,6 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         mButtonStats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Advised to take Screenshot at last", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(getApplicationContext(), HomeStatisticsActivity2.class));            }
 
         });
