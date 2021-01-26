@@ -1,213 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_layout_normal"
-    tools:context=".ArticleActivity">
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg_layout_normal"
+tools:context=".ArticleActivity">
+
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="26dp"
         android:text="Articles"
-        android:fontFamily="@font/bold"
         android:textColor="@color/colorTextPrimary"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="13dp"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:textSize="30sp" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="13dp"
-        android:fontFamily="@font/bold"
-        android:layout_marginTop="60dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="70dp"
         android:text="Top financial literacy publishers "
         android:textColor="@color/colorTextPrimary"
         android:textSize="20sp" />
 
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/slider"
+        android:layout_width="wrap_content"
+        android:layout_height="217dp"
+        android:layout_above="@+id/SecondPubButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="41dp"
+        app:auto_cycle="true"
+        app:corner_radius="20"
+        app:delay="0"
+        app:error_image="@drawable/bg_grey"
+        app:period="1000"
+        app:placeholder="@drawable/bg_grey">
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
     <Button
         android:id="@+id/FirstPubButton"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="225dp"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:layout_marginBottom="164dp"
         android:onClick="GetUrlFromIntent"
         android:text="KCLAU"
-        android:textColor="@color/colorTextPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        />
-
-    <Button
-        android:id="@+id/SecondPubButton"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="60dp"
-        android:onClick="GetUrlFromIntentTwo"
-        android:text="iMoney"
-        android:textColor="@color/colorTextPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FirstPubButton" />
+        android:textColor="@color/colorTextPrimary" />
 
     <Button
         android:id="@+id/ThirdPubButton"
-        android:layout_width="166dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="156dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginBottom="101dp"
         android:onClick="GetUrlFromIntentThree"
         android:text="CompareHero"
-        android:textColor="@color/colorTextPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SecondPubButton" />
+        android:textColor="@color/colorTextPrimary" />
+
+    <Button
+        android:id="@+id/SecondPubButton"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:layout_marginBottom="232dp"
+        android:onClick="GetUrlFromIntentTwo"
+        android:text="iMoney"
+        android:textColor="@color/colorTextPrimary" />
 
     <FrameLayout
         android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="740dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="34dp">
+        tools:layout_editor_absoluteY="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp">
 
         <!-- Main content -->
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@drawable/bg_layout_register"
-            app:itemIconTint="@color/colorTextPrimary"
-            app:itemTextColor="@color/colorTextPrimary"
-            app:menu="@menu/bottom_navigation_menu" />
-
 
 
     </FrameLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:background="@color/colorSecondary"-->
-<!--    android:orientation="vertical"-->
-<!--    tools:context=".ArticleActivity">-->
-
-<!--    <com.denzcoskun.imageslider.ImageSlider-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:id="@+id/slider"-->
-<!--        app:auto_cycle="true"-->
-<!--        app:iss_placeholder="@color/cardview_dark_background"-->
-<!--        app:iss_error_image="@drawable/kclau"-->
-<!--        app:corner_radius="5"-->
-<!--        app:delay="0"-->
-<!--        app:period="1000"-->
-<!--        android:layout_height="210dp"-->
-<!--        ></com.denzcoskun.imageslider.ImageSlider>-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/textView4"-->
-<!--        android:layout_width="518dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginLeft="13dp"-->
-<!--        android:fontFamily="@font/bold"-->
-<!--        android:text="Articles"-->
-<!--        android:textColor="@color/colorTextPrimary"-->
-<!--        android:textSize="30sp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:layout_editor_absoluteY="10dp" />-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginLeft="13dp"-->
-<!--        android:fontFamily="@font/bold"-->
-<!--        android:layout_marginTop="60dp"-->
-<!--        android:text="Top financial literacy publishers "-->
-<!--        android:textColor="@color/colorTextPrimary"-->
-<!--        android:textSize="20sp" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/FirstPubButton"-->
-<!--        android:layout_width="142dp"-->
-<!--        android:layout_height="53dp"-->
-<!--        android:layout_marginTop="225dp"-->
-<!--        android:onClick="GetUrlFromIntent"-->
-<!--        android:text="KCLAU"-->
-<!--        android:textColor="@color/colorTextPrimary"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-
-<!--        />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/SecondPubButton"-->
-<!--        android:layout_width="142dp"-->
-<!--        android:layout_height="53dp"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_centerVertical="true"-->
-<!--        android:layout_marginTop="60dp"-->
-<!--        android:onClick="GetUrlFromIntentTwo"-->
-<!--        android:text="iMoney"-->
-<!--        android:textColor="@color/colorTextPrimary"-->
-<!--        />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/ThirdPubButton"-->
-<!--        android:layout_width="142dp"-->
-<!--        android:layout_height="53dp"-->
-<!--        android:layout_marginTop="60dp"-->
-<!--        android:onClick="GetUrlFromIntentThree"-->
-<!--        android:text="MoneySmart"-->
-<!--        android:textColor="@color/colorTextPrimary"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/textView4"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/SecondPubButton" />-->
-
-<!--    <FrameLayout-->
-<!--        android:id="@+id/container"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.0">-->
-
-<!--        &lt;!&ndash; Main content &ndash;&gt;-->
-
-<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--            android:id="@+id/bottom_navigation"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="bottom"-->
-<!--            android:background="@drawable/bg_layout_register"-->
-<!--            app:itemIconTint="@color/colorTextPrimary"-->
-<!--            app:itemTextColor="@color/colorTextPrimary"-->
-<!--            app:menu="@menu/bottom_navigation_menu" />-->
-
-<!--        <com.denzcoskun.imageslider.ImageSlider-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="250dp"-->
-<!--            android:layout_marginStart="16dp"-->
-<!--            android:layout_marginLeft="16dp" />-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/bg_layout_register"
+        app:itemIconTint="@color/colorTextPrimary"
+        app:itemTextColor="@color/colorTextPrimary"
+        app:menu="@menu/bottom_navigation_menu" />
 
 
-<!--    </FrameLayout>-->
-
-<!--</LinearLayout>-->
+</RelativeLayout>

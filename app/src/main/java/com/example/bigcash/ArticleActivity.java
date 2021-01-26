@@ -9,7 +9,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ArticleActivity extends AppCompatActivity {
 
@@ -18,6 +23,13 @@ public class ArticleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article);
 
+        ImageSlider imageSlider=findViewById(R.id.slider);
+
+        List<SlideModel> slideModels=new ArrayList<>();
+        slideModels.add(new SlideModel("https://i.imgur.com/ZdhgWdb.png","Image 1"));
+        slideModels.add(new SlideModel("https://i.imgur.com/lpcimlu.png","Image 2"));
+        slideModels.add(new SlideModel("https://i.imgur.com/4P9w3J0.png","Image 3"));
+        imageSlider.setImageList(slideModels,true);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.nav_articles);
