@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         Button mButtonBalance;
-        mButtonBalance = (Button) findViewById(R.id.buttonBalance);
+        mButtonBalance = findViewById(R.id.buttonBalance);
         mButtonBalance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         Button mButtonStats;
-        mButtonStats= (Button) findViewById(R.id.buttonStatistics);
+        mButtonStats= findViewById(R.id.buttonStatistics);
         mButtonStats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.nav_home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

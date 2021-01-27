@@ -15,7 +15,7 @@ public class HomeWebviewBalanceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_webview_balance);
 
-        webView = (WebView) findViewById(R.id.webview);
+        webView = findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
         
         webView.loadUrl("https://www.paypal.com/signin");

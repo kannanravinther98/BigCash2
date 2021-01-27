@@ -8,14 +8,32 @@ android:layout_height="match_parent"
 android:background="@drawable/bg_layout_normal"
 tools:context=".ArticleActivity">
 
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="Pay"-->
+<!--        android:fontFamily="@font/bold"-->
+<!--        android:textColor="@color/colorTextPrimary"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="13dp"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
 
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginLeft="13dp"-->
+<!--        android:fontFamily="@font/bold"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:text="Go to the displayed QR code "-->
+<!--        android:textColor="@color/colorTextPrimary"-->
+<!--        android:textSize="20sp" />-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-
         android:layout_alignParentTop="true"
         android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
@@ -31,6 +49,7 @@ tools:context=".ArticleActivity">
         android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
         android:layout_marginTop="70dp"
+        android:fontFamily="@font/bold"
         android:text="Top financial literacy publishers "
         android:textColor="@color/colorTextPrimary"
         android:textSize="20sp" />
@@ -63,35 +82,35 @@ tools:context=".ArticleActivity">
 
     <Button
         android:id="@+id/FirstPubButton"
-        android:layout_width="151dp"
+        android:layout_width="191dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="141dp"
-        android:layout_marginLeft="141dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginRight="119dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="166dp"
         android:onClick="GetUrlFromIntent"
         android:text="KCLAU"
         android:textColor="@color/colorTextPrimary" />
 
     <Button
         android:id="@+id/ThirdPubButton"
-        android:layout_width="156dp"
-        android:layout_height="46dp"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="139dp"
-        android:layout_marginLeft="139dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
         android:layout_marginBottom="101dp"
         android:onClick="GetUrlFromIntentThree"
         android:text="CompareHero"
@@ -99,18 +118,18 @@ tools:context=".ArticleActivity">
 
     <Button
         android:id="@+id/SecondPubButton"
-        android:layout_width="151dp"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="141dp"
-        android:layout_marginLeft="141dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginRight="119dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="234dp"
         android:onClick="GetUrlFromIntentTwo"
         android:text="iMoney"
         android:textColor="@color/colorTextPrimary" />
