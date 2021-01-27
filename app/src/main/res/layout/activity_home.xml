@@ -32,10 +32,13 @@
 
 
     <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/container"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="33dp">
 
         <!-- Main content -->
 
@@ -49,23 +52,37 @@
             app:itemTextColor="@color/colorTextPrimary"
             app:menu="@menu/bottom_navigation_menu" />
 
+
         <Button
             android:id="@+id/buttonBalance"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Balance"
             android:textColor="@color/colorTextPrimary"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="150dp"
             android:layout_marginLeft="133dp"/>
 
         <Button
             android:id="@+id/buttonStatistics"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="133dp"
+            android:layout_marginTop="230dp"
             android:text="Statistics"
-            android:textColor="@color/colorTextPrimary"
+            android:textColor="@color/colorTextPrimary" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtubePlayerView"
+            android:layout_width="385dp"
+            android:layout_height="177dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="350dp"
-            android:layout_marginLeft="133dp"/>
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:showFullScreenButton="true"
+            app:showSeekBar="true"
+            app:showYouTubeButton="false"
+            app:videoId="r5Iw-k0KT98" />
 
 
     </FrameLayout>
