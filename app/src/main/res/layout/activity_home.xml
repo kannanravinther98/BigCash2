@@ -4,28 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
     android:background="@drawable/bg_layout_normal"
+    android:clickable="false"
     tools:context=".HomeActivity">
 
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home"
-        android:fontFamily="@font/bold"
-        android:textColor="@color/colorTextPrimary"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="13dp"
+        android:fontFamily="@font/bold"
+        android:text="Home"
+        android:textColor="@color/colorTextPrimary"
         android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="13dp"
-        android:fontFamily="@font/bold"
         android:layout_marginTop="60dp"
+        android:fontFamily="@font/bold"
         android:text="Current Balance and Statistics"
         android:textColor="@color/colorTextPrimary"
         android:textSize="20sp" />
@@ -35,10 +38,11 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="33dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <!-- Main content -->
 
@@ -57,10 +61,10 @@
             android:id="@+id/buttonBalance"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Balance"
-            android:textColor="@color/colorTextPrimary"
+            android:layout_marginLeft="133dp"
             android:layout_marginTop="150dp"
-            android:layout_marginLeft="133dp"/>
+            android:text="Balance"
+            android:textColor="@color/colorTextPrimary" />
 
         <Button
             android:id="@+id/buttonStatistics"
@@ -71,18 +75,25 @@
             android:text="Statistics"
             android:textColor="@color/colorTextPrimary" />
 
-        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:id="@+id/youtubePlayerView"
-            android:layout_width="385dp"
-            android:layout_height="177dp"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="350dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            app:showFullScreenButton="true"
-            app:showSeekBar="true"
-            app:showYouTubeButton="false"
-            app:videoId="r5Iw-k0KT98" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayerView"
+                android:layout_width="313dp"
+                android:layout_height="162dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.736"
+                app:showFullScreenButton="false"
+                app:showSeekBar="true"
+                app:showYouTubeButton="false"
+                app:videoId="r5Iw-k0KT98" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </FrameLayout>
