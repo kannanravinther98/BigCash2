@@ -56,28 +56,20 @@
             app:itemTextColor="@color/colorTextPrimary"
             app:menu="@menu/bottom_navigation_menu" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
-        <Button
-            android:id="@+id/buttonBalance"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="133dp"
-            android:layout_marginTop="150dp"
-            android:text="Balance"
-            android:textColor="@color/colorTextPrimary" />
 
-        <Button
-            android:id="@+id/buttonStatistics"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="133dp"
-            android:layout_marginTop="230dp"
-            android:text="Statistics"
-            android:textColor="@color/colorTextPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="588dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toStartOf="parent">
 
             <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
                 android:id="@+id/youtubePlayerView"
@@ -85,13 +77,46 @@
                 android:layout_height="162dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.195"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.736"
+                app:layout_constraintVertical_bias="0.821"
                 app:showFullScreenButton="false"
                 app:showSeekBar="true"
                 app:showYouTubeButton="false"
                 app:videoId="r5Iw-k0KT98" />
+
+            <Button
+                android:id="@+id/buttonStatistics"
+                android:layout_width="209dp"
+                android:layout_height="53dp"
+                android:drawableLeft="@drawable/analytics_32"
+                android:drawableRight="@drawable/forward_ios_24"
+                android:gravity="center"
+                android:text="Statistics"
+                android:textColor="@color/colorTextPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.44"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.428" />
+
+            <Button
+                android:id="@+id/buttonBalance"
+                android:layout_width="210dp"
+                android:layout_height="51dp"
+                android:drawableLeft="@drawable/balance_wallet_32"
+                android:drawableRight="@drawable/forward_ios_24"
+                android:gravity="center"
+                android:text="Balance"
+                android:textColor="@color/colorTextPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.331" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
