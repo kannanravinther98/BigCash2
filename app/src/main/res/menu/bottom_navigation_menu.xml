@@ -6,7 +6,7 @@
         android:title="Home"/>
     <item
         android:id="@+id/nav_qr_code"
-        android:icon="@drawable/ic_qr_code"
+        android:icon="@drawable/qr_code_gray_correct"
         android:title="QR Code" />
     <item
         android:id="@+id/nav_articles"

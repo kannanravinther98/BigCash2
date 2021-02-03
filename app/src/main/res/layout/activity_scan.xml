@@ -46,27 +46,29 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@drawable/bg_layout_register"
-            app:itemIconTint="@color/colorTextPrimary"
+            app:itemIconTint="@color/colorSecondary"
             app:itemTextColor="@color/colorTextPrimary"
             app:menu="@menu/bottom_navigation_menu" />
 
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="178dp"
+            android:layout_width="181dp"
             android:layout_height="139dp"
             android:layout_marginStart="100dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="210dp"
-            android:src="@drawable/ic_qr_code" />
+            android:src="@drawable/qr_code_24_grey" />
 
         <Button
             android:id="@+id/buttonPay"
-            android:layout_width="150dp"
-            android:layout_height="55dp"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="115dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="370dp"
+            android:drawableLeft="@drawable/scanner_32_orange"
+            android:drawableRight="@drawable/forward_ios_24"
             android:text="Scan"
             android:textColor="@color/colorTextPrimary" />
 
