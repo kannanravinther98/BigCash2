@@ -62,20 +62,21 @@ tools:context=".ArticleActivity">
 
     </com.denzcoskun.imageslider.ImageSlider>
 
+
     <Button
         android:id="@+id/FirstPubButton"
-        android:layout_width="232dp"
+        android:layout_width="222dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="86dp"
-        android:layout_marginLeft="86dp"
-        android:layout_marginEnd="93dp"
-        android:layout_marginRight="93dp"
-        android:layout_marginBottom="166dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginBottom="169dp"
         android:drawableLeft="@drawable/article_24"
         android:drawableRight="@drawable/forward_ios_24"
         android:onClick="GetUrlFromIntent"
@@ -84,7 +85,7 @@ tools:context=".ArticleActivity">
 
     <Button
         android:id="@+id/ThirdPubButton"
-        android:layout_width="228dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -92,11 +93,11 @@ tools:context=".ArticleActivity">
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginLeft="89dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
         android:layout_marginEnd="93dp"
         android:layout_marginRight="93dp"
-        android:layout_marginBottom="103dp"
+        android:layout_marginBottom="122dp"
         android:drawableLeft="@drawable/article_24"
         android:drawableRight="@drawable/forward_ios_24"
         android:onClick="GetUrlFromIntentThree"
@@ -112,16 +113,17 @@ tools:context=".ArticleActivity">
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginEnd="93dp"
-        android:layout_marginRight="99dp"
-        android:layout_marginBottom="234dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginBottom="216dp"
         android:drawableLeft="@drawable/article_24"
         android:drawableRight="@drawable/forward_ios_24"
         android:onClick="GetUrlFromIntentTwo"
         android:text="iMoney"
         android:textColor="@color/colorTextPrimary" />
+
 
     <FrameLayout
         android:id="@+id/container"

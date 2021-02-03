@@ -26,9 +26,9 @@ public class ArticleActivity extends AppCompatActivity {
         ImageSlider imageSlider=findViewById(R.id.slider);
 
         List<SlideModel> slideModels=new ArrayList<>();
-        slideModels.add(new SlideModel("https://i.imgur.com/lpcimlu.png","IMoney"));
-        slideModels.add(new SlideModel("https://i.imgur.com/ZdhgWdb.png","KCLau"));
+        slideModels.add(new SlideModel("https://i.imgur.com/Gb3sJjf.png","IMoney"));
         slideModels.add(new SlideModel("https://i.imgur.com/4P9w3J0.png","CompareHero"));
+        slideModels.add(new SlideModel("https://i.imgur.com/HEAq4Ax.png","KCLau"));
         imageSlider.setImageList(slideModels,true);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
