@@ -7,6 +7,9 @@
     android:background="@drawable/bg_layout_normal"
     tools:context=".ScanActivity">
 
+
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -33,12 +36,16 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
 
         <!-- Main content -->
+
+
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
@@ -46,31 +53,45 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@drawable/bg_layout_register"
-            app:itemIconTint="@color/colorSecondary"
+            app:itemIconTint="@color/colorTextPrimary"
             app:itemTextColor="@color/colorTextPrimary"
             app:menu="@menu/bottom_navigation_menu" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="416dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="181dp"
-            android:layout_height="139dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="210dp"
-            android:src="@drawable/qr_code_24_grey" />
 
-        <Button
-            android:id="@+id/buttonPay"
-            android:layout_width="159dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="115dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="370dp"
-            android:drawableLeft="@drawable/scanner_32_orange"
-            android:drawableRight="@drawable/forward_ios_24"
-            android:text="Scan"
-            android:textColor="@color/colorTextPrimary" />
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="263dp"
+                android:layout_height="135dp"
+                android:src="@drawable/code"
+                app:layout_constraintBottom_toTopOf="@+id/buttonPay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.423">
+
+            </pl.droidsonroids.gif.GifImageView>
+
+            <Button
+                android:id="@+id/buttonPay"
+                android:layout_width="159dp"
+                android:layout_height="66dp"
+                android:drawableLeft="@drawable/scanner_32_orange"
+                android:drawableRight="@drawable/forward_ios_24"
+                android:text="Scan"
+                android:textColor="@color/colorTextPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.628" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
 

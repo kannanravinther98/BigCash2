@@ -34,7 +34,6 @@ public class HomeStatisticsActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_statistics);
-        imageView = findViewById(R.id.imageView);
 
         webView = findViewById(R.id.webviewStats);
         webView.setWebViewClient(new WebViewClient());
