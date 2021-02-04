@@ -17,13 +17,14 @@
         android:ems="10"
         android:textColorHint="@color/colorTextSecondary"
         android:hint="Email"
+        android:textColor="@color/colorTextPrimary"
         android:inputType="textEmailAddress" />
 
     <Button
         android:id="@+id/btnSendtoEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send me password"
+        android:text="Reset Password"
         android:textColor="@color/colorTextPrimary"/>
 
 

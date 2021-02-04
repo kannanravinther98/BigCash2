@@ -38,7 +38,7 @@ public class ForgotPassActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()) {
-                            Toast.makeText(ForgotPassActivity.this, "Password sent to your email", Toast.LENGTH_LONG).show();
+                            Toast.makeText(ForgotPassActivity.this, "Please check email", Toast.LENGTH_LONG).show();
 
                         }else{
                             Toast.makeText(ForgotPassActivity.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
