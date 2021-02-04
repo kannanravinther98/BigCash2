@@ -58,13 +58,27 @@
 
 
             <Button
+                android:id="@+id/CUBtn"
+                android:layout_width="188dp"
+                android:layout_height="48dp"
+                android:drawableLeft="@drawable/ic_baseline_edit_24"
+                android:drawableRight="@drawable/forward_ios_24"
+                android:text="Request"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.206"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.441" />
+            <Button
                 android:id="@+id/CUBtn2"
                 android:layout_width="182dp"
                 android:layout_height="40dp"
                 android:drawableLeft="@drawable/ic_baseline_call_24"
                 android:drawableRight="@drawable/forward_ios_24"
                 android:text="Contact Us"
-
                 android:textColor="@color/colorTextPrimary"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -88,27 +102,11 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.716" />
 
-            <Button
-                android:id="@+id/CUBtn"
-                android:layout_width="188dp"
-                android:layout_height="48dp"
-                android:drawableLeft="@drawable/ic_baseline_edit_24"
-                android:drawableRight="@drawable/forward_ios_24"
-                android:text="Request"
-
-                android:textColor="@color/colorTextPrimary"
-                android:textSize="15sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.203"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.443" />
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="322dp"
-                android:layout_height="53dp"
+                android:layout_width="305dp"
+                android:layout_height="341dp"
                 android:fontFamily="@font/regular"
                 android:text="Request  changes to name and email"
                 android:textColor="#FFFFFF"
@@ -117,10 +115,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.483"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.282" />
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

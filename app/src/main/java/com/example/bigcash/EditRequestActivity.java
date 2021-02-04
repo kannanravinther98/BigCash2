@@ -7,16 +7,18 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class contactUs extends AppCompatActivity {
+public class EditRequestActivity extends AppCompatActivity {
     private WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact_us);
-        webView = findViewById(R.id.webviewCu);
+        setContentView(R.layout.activity_edit_request);
+
+        webView = findViewById(R.id.webviewCu4);
         webView.setWebViewClient(new WebViewClient());
 
-        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSdm9r0wryBsUbrrU-RjXHP1m3XoDx_7FrhEGdKq6NcUajVPuQ/viewform");
+        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSe0b1iVWbi8zDriHW-eWXjCE1I_ihjRQEQpBLhMZXmeft9vPA/viewform");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
     }

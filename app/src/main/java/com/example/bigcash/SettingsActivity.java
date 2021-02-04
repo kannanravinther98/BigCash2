@@ -22,7 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 
 public class SettingsActivity extends AppCompatActivity {
-    private Button btn,CUbtn;
+    private Button btn,CUbtn,CUbtn2;
     private BottomNavigationView mBottomNavigationView;
     TextView profileFullName,profileEmail;
     FirebaseAuth fAuth;
@@ -42,6 +42,16 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button CUbtn2 = findViewById(R.id.CUBtn2);
+        CUbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingsActivity.this,EditRequestActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn = findViewById(R.id.logoutBtn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
